@@ -3,77 +3,191 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A.J. Godwin | Computer Repair Services</title>
+
+<title>RAYDpc | Computer Repair & Digital Services</title>
+
 <style>
-body{
+*{
     margin:0;
-    font-family:Arial,sans-serif;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
     background:#0f172a;
     color:white;
+    line-height:1.6;
 }
+
 header{
-    padding:80px 20px;
-    text-align:center;
     background:linear-gradient(135deg,#2563eb,#06b6d4);
+    padding:100px 20px;
+    text-align:center;
 }
-h1{
-    font-size:3rem;
+
+header h1{
+    font-size:4rem;
+    margin-bottom:10px;
 }
-section{
-    max-width:1000px;
+
+header p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
     margin:auto;
-    padding:40px 20px;
+    padding:70px 0;
 }
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+    font-size:2rem;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
 .card{
     background:#1e293b;
-    padding:20px;
-    border-radius:10px;
-    margin:15px 0;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
 }
-footer{
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#60a5fa;
+}
+
+.about{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
     text-align:center;
-    padding:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
     background:#020617;
+    text-align:center;
+    padding:25px;
+    color:#94a3b8;
 }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>A.J. Godwin</h1>
-    <p>Computer Repair Technician • Student • Creator</p>
+    <h1>RAYDpc</h1>
+    <p>Professional Computer Repair & Digital Solutions</p>
+
+    #services
+        Explore Services
+    </a>
 </header>
 
-<section>
-    <h2>Services</h2>
+<section class="container" id="services">
 
-    <div class="card">
-        <h3>Computer Repair</h3>
-        <p>Desktop and laptop troubleshooting, upgrades and maintenance.</p>
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>💻 Computer Repair</h3>
+            <p>Desktop and laptop troubleshooting, maintenance and repair.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Hardware Upgrades</h3>
+            <p>RAM upgrades, SSD installation and performance tuning.</p>
+        </div>
+
+        <div class="card">
+            <h3>🪟 Windows Installation</h3>
+            <p>Windows installation, activation assistance and driver setup.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐧 Linux Support</h3>
+            <p>Ubuntu, Zorin OS and Linux troubleshooting services.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡 Virus Removal</h3>
+            <p>Malware removal, system cleanup and security optimization.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Website Setup</h3>
+            <p>Portfolio websites, GitHub Pages hosting and basic web development.</p>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h3>Linux & Windows Setup</h3>
-        <p>Operating system installation, optimization and driver support.</p>
-    </div>
-
-    <div class="card">
-        <h3>Website Development</h3>
-        <p>Simple websites hosted on GitHub Pages.</p>
-    </div>
 </section>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-    I'm A.J. Godwin from Thoothukudi, Tamil Nadu.
-    I enjoy computer repair, Linux, web development,
-    YouTube content creation and technology projects.
-    </p>
+<section class="container">
+
+    <h2 class="section-title">About RAYDpc</h2>
+
+    <div class="about">
+
+        <p>
+            RAYDpc provides reliable and affordable computer repair,
+            operating system installation, hardware upgrades, Linux support
+            and digital services for students, professionals and businesses.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+
+        <p>📍 Thoothukudi, Tamil Nadu</p>
+        <p>💻 RAYDpc Computer Services</p>
+        <p>📧 raydpc@example.com</p>
+
+    </div>
+
 </section>
 
 <footer>
-    © 2026 A.J. Godwin
+    © 2026 RAYDpc. All Rights Reserved.
 </footer>
 
 </body>
